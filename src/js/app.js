@@ -25,7 +25,7 @@ const primary = [
 
 var contrast = 5;
 window.onload = function () {
-  generateItemCard1();
+  generateCard();
 };
 
 const switchTab = (el) => {
