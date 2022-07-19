@@ -308,7 +308,7 @@ const generateItemCard1 = () => {
                         </div>
                         <div class="py-2"></div>
                         <div class="flex gap-2 border border-${`color`}-900 shadow-md shadow-${color}-200 rounded-lg">
-                            <img src="/src/img/plant.jpg" alt="" class="w-24 md:w-20">
+                            <img src="src/img/plant.jpg" alt="" class="w-24 md:w-20">
                             <div>
                                 <p class="mt-2 font-bold text-lg text-${color}-900">Plant pot</p>
                                 <p class="text-sm md:text-xs">USD $29.99</p>
