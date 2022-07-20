@@ -1,8 +1,6 @@
-
 var contrast = 5;
 window.onload = function () {
-  // generateCard();
-  avatar();
+  button();
 };
 
 if ($(window).width() < 768) {
@@ -29,40 +27,28 @@ const switchTab = (el) => {
   console.log(el);
   switch (parseInt(el)) {
     case 1:
-      console.log("----------------");
-      $(document.getElementById("testCounter")).addClass("hidden");
       accordion();
       break;
     case 2:
       avatar();
       break;
+    case 3:
+      dropdown();
+      break;
+    case 4:
+      badge();
+      break;
+    case 5:
+      button();
+      break;
+    case 6:
+      buttonGroup();
+      break;
 
     default:
+      accordion();
       break;
   }
-
-  // if (id == "profile") {
-  //   $(document.getElementById("testCounter")).addClass("hidden");
-  //   generateCard();
-  // }
-  // if (id == "test") {
-  //   $(document.getElementById("testCounter")).removeClass("hidden");
-  //   tenTest();
-  // }
-  // if (id == "timeline") {
-  //   generateTimeLine();
-  // }
-  // if (id == "itemCard1") {
-  //   generateItemCard1();
-  // }
-
-  // $(document.querySelector(".active")).removeClass(
-  //   "border-b-2 border-slate-900 font-semibold text-slate-900 active"
-  // );
-
-  // $(el).addClass(
-  //   "border-b-2 border-slate-900 font-semibold text-slate-900 active"
-  // );
 };
 
 /**
@@ -449,16 +435,3 @@ const tenTest = () => {
     },
   });
 };
-
-// const Navtoggle = () => {
-//   if ($("#sidenav").hasClass("open")) {
-//     document.getElementById("sidenav").style.transform = "translateX(-100%)";
-//     // document.getElementById("sidenav").style.width = "0px";
-//     $(".sidenav").removeClass("open");
-//   } else {
-//     // document.getElementById("sidenav").style.width = "500px";
-//     document.getElementById("sidenav").style.transform = "translateX(0%)";
-//     document.getElementById("sidenav").style.display = "hidden";
-//     $("#sidenav").addClass("open");
-//   }
-// };

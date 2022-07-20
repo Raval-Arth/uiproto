@@ -25,19 +25,8 @@
   <div class="mobileSidebarCanvas"></div>
   <!-- nav -->
   <div class="nav">
-    <nav class="py-5 px-5 md:px-15 lg:20 text-white bg-slate-800 border-b flex items-center justify-between">
-      <span class="text-lg">UIPROTO</span>
-      <div class="flex items-center gap-4">
-        <p>About</p>
-        <!-- <input
-            type="text"
-            placeholder="Search"
-            class="px-4 py-2 text-slate-300/80 bg-slate-700 rounded-full outline-none"
-          /> -->
-      </div>
-    </nav>
     <nav class="text-xl bg-white py-5 px-10 md:px-15 lg:20 flex items-center justify-between shadow shadow-b-lg">
-      <p>Quick UI Prototype</p>
+      <p>UIPROTO</p>
       <input type="text" value="10" class="hidden" />
       <!-- <p onclick="tenTest()">Random</p> -->
       <span id="menuIcon" onclick="sidenavToggle()" class=""><img src="src/img/menu.svg" alt=""></span>
@@ -62,7 +51,7 @@
     <div class="desktopSidebarCanvas md:w-1/4 lg:2/12 2xl:w-2/12"></div>
     <!-- main -->
     <div id="main"
-      class="h-[80vh] md:h-screen overflow-y-scroll w-full pb-5 my-4 md:w-3/4 lg:w-11/12 2xl:w-10/12 px-10 md:px-15 lg:20 flex flex-col gap-4 ">
+      class="h-[80vh] md:h-screen overflow-y-scroll pb-2 w-full my-4 md:w-3/4 lg:w-11/12 2xl:w-10/12 px-10 md:px-15 lg:20 flex flex-col gap-4 ">
       <input onkeyup="generateTest(this)" id="testCounter" type="number" min="1" max="100"
         placeholder="Number between 1 - 100"
         class="px-2 w-3/4 py-2 md:w-1/4 text-slate-900 bg-slate-200 rounded-lg outline-none hidden" />
@@ -83,5 +72,9 @@
 <script src="src/js/app.js" defer></script>
 <script src="src/js/components/elements/accordion.js" defer></script>
 <script src="src/js/components/elements/avatar.js" defer></script>
+<script src="src/js/components/elementS/dropdown.js" defer></script>
+<script src="src/js/components/elementS/badge.js" defer></script>
+<script src="src/js/components/elements/button.js" defer></script>
+<script src="src/js/components/elements/buttonGroup.js" defer></script>
 
 </html>

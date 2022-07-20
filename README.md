@@ -203,5 +203,3 @@ npx tailwindcss -i ./src/main.css -o ./css/tailwind.css --watch
 | Checkout Pages      |
 | Order Detail Pages  |
 | Order History Pages |
-
-

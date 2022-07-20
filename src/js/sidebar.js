@@ -2,7 +2,7 @@ const selectSidenavItem = (el) => {
   $(el.parentNode.querySelector(".active-sidenav-item")).removeClass(
     "text-slate-900 bg-slate-100 active-sidenav-item"
   );
-  $(el).addClass("text-slate-900 bg-slate-100 active-sidenav-item");
+  $("#" + el.id).addClass("text-slate-900 bg-slate-100 active-sidenav-item");
   switchTab(el.id);
 
   if ($(window).width() < 768) {
@@ -31,16 +31,16 @@ const sidebarComponent = () => {
                         <p id='2' onclick="selectSidenavItem(this)"
                             class='sidenav-item px-2 py-1 hover:bg-slate-100 hover:text-slate-900 rounded-lg'>Avatars
                         </p>
-                        <p onclick="selectSidenavItem(this)"
+                        <p id='3' onclick="selectSidenavItem(this)"
                             class='sidenav-item px-2 py-1 hover:bg-slate-100 hover:text-slate-900 rounded-lg'>Dropdowns
                         </p>
-                        <p onclick="selectSidenavItem(this)"
+                        <p id='4' onclick="selectSidenavItem(this)"
                             class='sidenav-item px-2 py-1 hover:bg-slate-100 hover:text-slate-900 rounded-lg'>Badges
                         </p>
-                        <p onclick="selectSidenavItem(this)"
+                        <p id='5' onclick="selectSidenavItem(this)"
                             class='sidenav-item px-2 py-1 hover:bg-slate-100 hover:text-slate-900 rounded-lg'>Buttons
                         </p>
-                        <p onclick="selectSidenavItem(this)"
+                        <p id='6' onclick="selectSidenavItem(this)"
                             class='sidenav-item px-2 py-1 hover:bg-slate-100 hover:text-slate-900 rounded-lg'>Button
                             Groups
                         </p>

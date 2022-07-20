@@ -11,9 +11,8 @@ const collapseControl = (el) => {
 };
 const accordion = () => {
   let color = "";
-  let cup_item = "";
-  array = [...primary];
-  cup_copy = [...cupcake];
+  let array = [...primary];
+  let cup_copy = [...cupcake];
   array = array.sort(() => Math.random() - 0.5);
   cup_copy = cup_copy.sort(() => Math.random() - 0.5);
   $(".generateCanavas").html("");
@@ -41,31 +40,37 @@ const accordion = () => {
         <div class="shadow-md bg-white rounded-lg shadow-${color}-200">
             <div class="px-5 py-3 ">
                 <div class="flex items-center justify-between">
-                    <p class="py-1 text-lg md:text-xl font-semibold">Collapsible Grop 1 </p>
+                    <p class="py-1 text-lg">Collapsible Grop 1 </p>
                     <img onclick="collapseControl(this)" src="src/img/arrow.svg" class="w-6 p-0.5 rounded-full bg-${color}-100" alt="" />
                 </div>
                 <div id="collapse" class="collapse">
-                    <p class="text-${color}-900/90">${cup_copy[Math.floor(Math.random() * 22)]}
+                    <p class="text-${color}-900/80">${
+      cup_copy[Math.floor(Math.random() * 22)]
+    }
                     </p>
                 </div>
             </div>
             <div class="px-5 py-3 ">
                 <div class="flex items-center justify-between">
-                    <p class="py-1 text-lg md:text-xl font-semibold">Collapsible Grop 2 </p>
+                    <p class="py-1 text-lg">Collapsible Grop 2 </p>
                     <img onclick="collapseControl(this)" src="src/img/arrow.svg" class="w-6 p-0.5 rounded-full bg-${color}-100" alt="" />
                 </div>
                 <div id="collapse" class="collapse">
-                    <p class="text-${color}-900/90">${cup_copy[Math.floor(Math.random() * 22)]}
+                    <p class="text-${color}-900/80">${
+      cup_copy[Math.floor(Math.random() * 22)]
+    }
                     </p>
                 </div>
             </div>
             <div class="px-5 py-3 ">
                 <div class="flex items-center justify-between">
-                    <p class="py-1 text-lg md:text-xl font-semibold">Collapsible Grop 3 </p>
+                    <p class="py-1 text-lg">Collapsible Grop 3 </p>
                     <img onclick="collapseControl(this)" src="src/img/arrow.svg" class="w-6 p-0.5 rounded-full bg-${color}-100" alt="" />
                 </div>
                 <div id="collapse" class="collapse">
-                    <p class="text-${color}-900/90">${cup_copy[Math.floor(Math.random() * 22)]}
+                    <p class="text-${color}-900/80">${
+      cup_copy[Math.floor(Math.random() * 22)]
+    }
                     </p>
                 </div>
             </div>
