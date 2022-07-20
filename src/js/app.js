@@ -30,8 +30,8 @@ window.onload = function () {
 
 const sidebarComponent = () => {
   return `
-  <nav id="sidebar" class="sidebar px-4 text-slate-500 my-2 py-2 bg-white rounded-r-lg shadow">
-      <h2 class="mb-2 pb-2 text-center text-slate-400 border-b">Component</h2>
+  <nav id="sidebar" class="sidebar px-4 text-slate-500 my-2 md:my-4 py-2 h-screen md:h-[70vh] md:overflow-y-scroll bg-white rounded-r-lg shadow">
+      <h2 class="mb-2 pb-2 text-xl font-semibold text-center text-slate-700 border-b">Component</h2>
       <div class="text-lg flex flex-col gap-1">
         <p class="sidenav-item px-2 py-1 hover:bg-slate-100 hover:text-slate-900 rounded-lg">Hero Sections</p>
         <p class="sidenav-item px-2 py-1 hover:bg-slate-100 hover:text-slate-900 rounded-lg">Feature Sections</p>

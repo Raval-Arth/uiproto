@@ -72,7 +72,7 @@ input[type="number"] {
 }
 
 .sidebar {
-  height:max-content;
+  height: max-content;
   width: 0%;
   display: none;
   z-index: 1;
@@ -82,4 +82,7 @@ input[type="number"] {
 .open {
   width: 75%;
   display: block;
+}
+.h-custome {
+  height: 70vh;
 }
