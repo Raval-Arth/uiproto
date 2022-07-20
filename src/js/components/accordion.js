@@ -21,9 +21,8 @@ const accordion = () => {
   for (let index = 0; index < 22; index++) {
     color = array.pop();
     $(".generateCanavas").append(` <div
-    class="w-full profile">
-    <div class="grid grid-cols-1 gap-4 text-${color}-900">
-
+    class="w-full accordion">
+    <div class="grid grid-cols-1 gap-4 text-justify text-${color}-900">
         <div class="flex items-center justify-between px-5 py-3 bg-white rounded-lg shadow">
             <div class="flex items-center gap-4">
                 <div class="w-5 h-5 bg-${color}-50 rounded-full"></div>
@@ -44,9 +43,8 @@ const accordion = () => {
                 <div id="collapse" class="collapse">
                     <p class="text-${color}-900/90">Lorem ipsum dolor sit amet, consectetur
                         adipiscing elit.
-                        Suspendisse
-                        malesuada lacus ex, sit amet blandit leo lobortis eget. Lorem ipsum dolor sit amet, consectetur
-                        adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.
+                        Suspendisse lacus ex, sit amet blandit leo lobortis eget. Lorem ipsum dolor sit amet, consectetur
+                        adipiscing elit. lacus ex, sit amet blandit leo lobortis eget.
                     </p>
                 </div>
             </div>
@@ -58,9 +56,8 @@ const accordion = () => {
                 <div id="collapse" class="collapse">
                     <p class="text-${color}-900/90">Lorem ipsum dolor sit amet, consectetur
                         adipiscing elit.
-                        Suspendisse
-                        malesuada lacus ex, sit amet blandit leo lobortis eget. Lorem ipsum dolor sit amet, consectetur
-                        adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.
+                        Suspendisse lacus ex, sit amet blandit leo lobortis eget. Lorem ipsum dolor sit amet, consectetur
+                        adipiscing elit. lacus ex, sit amet blandit leo lobortis eget.
                     </p>
                 </div>
             </div>
@@ -72,9 +69,8 @@ const accordion = () => {
                 <div id="collapse" class="collapse">
                     <p class="text-${color}-900/90">Lorem ipsum dolor sit amet, consectetur
                         adipiscing elit.
-                        Suspendisse
-                        malesuada lacus ex, sit amet blandit leo lobortis eget. Lorem ipsum dolor sit amet, consectetur
-                        adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.
+                        Suspendisse lacus ex, sit amet blandit leo lobortis eget. Lorem ipsum dolor sit amet, consectetur
+                        adipiscing elit. lacus ex, sit amet blandit leo lobortis eget.
                     </p>
                 </div>
             </div>

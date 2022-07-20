@@ -229,13 +229,13 @@ const generateTest = (count) => {
 const copyToClipBoard = (el) => {
   /* Get the text field */
   console.log(el.parentNode.parentNode.parentNode.parentNode);
-  let copyText = el.parentNode.parentNode.parentNode.parentNode.textContent;
+  let copyText = el.parentNode.parentNode.parentNode.parentNode.innerHTML;
 
   /* Copy the text inside the text field */
-  navigator.clipboard.writeText(copyText.value);
+  navigator.clipboard.writeText(copyText);
 
   /* Alert the copied text */
-  alert("Copied the text: " + copyText.value);
+  alert("Copied the text: " + copyText);
 };
 
 const generateCard = () => {
