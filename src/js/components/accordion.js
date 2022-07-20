@@ -1,5 +1,5 @@
 const collapseControl = (el) => {
-  console.log();
+  console.log(el.parentNode.parentNode.childNodes);
   $(el.parentNode.parentNode.childNodes[3]).css("transition", "0.15s ease-out");
   if ($(el.parentNode.parentNode.childNodes[3]).hasClass("collapse")) {
     $(el).css("transform", "rotate(180deg)");
