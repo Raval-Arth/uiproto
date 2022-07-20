@@ -28,6 +28,53 @@ window.onload = function () {
   generateCard();
 };
 
+const sidebarComponent = () => {
+  return `
+  <nav id="sidebar" class="sidebar px-4 text-slate-500 my-2 py-2 bg-white rounded-r-lg shadow">
+      <h2 class="mb-2 pb-2 text-center text-slate-400 border-b">Component</h2>
+      <div class="text-lg flex flex-col gap-1">
+        <p class="sidenav-item px-2 py-1 hover:bg-slate-100 hover:text-slate-900 rounded-lg">Hero Sections</p>
+        <p class="sidenav-item px-2 py-1 hover:bg-slate-100 hover:text-slate-900 rounded-lg">Feature Sections</p>
+        <p class="sidenav-item px-2 py-1 hover:bg-slate-100 hover:text-slate-900 rounded-lg">CTA Sections</p>
+        <p class="sidenav-item px-2 py-1 hover:bg-slate-100 hover:text-slate-900 rounded-lg">Pricing Sections</p>
+        <p class="sidenav-item px-2 py-1 hover:bg-slate-100 hover:text-slate-900 rounded-lg">Header Sections</p>
+        <p class="sidenav-item px-2 py-1 hover:bg-slate-100 hover:text-slate-900 rounded-lg">FAQs</p>
+        <p class="sidenav-item px-2 py-1 hover:bg-slate-100 hover:text-slate-900 rounded-lg">Newsletter Sections</p>
+        <p class="sidenav-item px-2 py-1 hover:bg-slate-100 hover:text-slate-900 rounded-lg">Stats</p>
+        <p class="sidenav-item px-2 py-1 hover:bg-slate-100 hover:text-slate-900 rounded-lg">Testimonials</p>
+        <p class="sidenav-item px-2 py-1 hover:bg-slate-100 hover:text-slate-900 rounded-lg">Blog Sections</p>
+        <p class="sidenav-item px-2 py-1 hover:bg-slate-100 hover:text-slate-900 rounded-lg">Contact Sections</p>
+        <p class="sidenav-item px-2 py-1 hover:bg-slate-100 hover:text-slate-900 rounded-lg">Team Sections</p>
+        <p class="sidenav-item px-2 py-1 hover:bg-slate-100 hover:text-slate-900 rounded-lg">Content Sections</p>
+        <p class="sidenav-item px-2 py-1 hover:bg-slate-100 hover:text-slate-900 rounded-lg">Footers</p>
+        <p class="sidenav-item px-2 py-1 hover:bg-slate-100 hover:text-slate-900 rounded-lg">Logo Clouds</p>
+        <p class="sidenav-item px-2 py-1 hover:bg-slate-100 hover:text-slate-900 rounded-lg">Profile</p>
+      </div>
+      <h2>Pages</h2>
+    </nav>
+  `;
+};
+if ($(window).width() < 768) {
+  $("#menuIcon").removeClass("hidden");
+  $(".mobileSidebarCanvas").html(sidebarComponent());
+} else {
+  $("#menuIcon").addClass("hidden");
+  $(".desktopSidebarCanvas").html(sidebarComponent());
+  $("#sidebar").addClass("open");
+  $("#sidebar").addClass("w-full");
+}
+
+const sidenavToggle = () => {
+  if ($("#sidebar").hasClass("open")) {
+    $("#sidebar").removeClass("open");
+    $("#sidebar").removeClass("fixed");
+  } else {
+    $("#sidebar").addClass("open");
+    $("#sidebar").addClass("fixed");
+  }
+};
+
+function w3_close() {}
 const switchTab = (el) => {
   let id = el.id;
 
@@ -103,7 +150,10 @@ const generateTest = (count) => {
           if (
             (brightnessByColor(colors[0]) + 0.05) /
               (brightnessByColor(colors[3]) + 0.05) >
-            contrast
+              contrast ||
+            (brightnessByColor(colors[3]) + 0.05) /
+              (brightnessByColor(colors[0]) + 0.05) >
+              contrast
           ) {
             $(".generateCanavas").append(
               `
@@ -125,7 +175,10 @@ const generateTest = (count) => {
           if (
             (brightnessByColor(colors[0]) + 0.05) /
               (brightnessByColor(colors[2]) + 0.05) >
-            contrast
+              contrast ||
+            (brightnessByColor(colors[2]) + 0.05) /
+              (brightnessByColor(colors[0]) + 0.05) >
+              contrast
           ) {
             $(".generateCanavas").append(
               `
@@ -147,7 +200,10 @@ const generateTest = (count) => {
           if (
             (brightnessByColor(colors[0]) + 0.05) /
               (brightnessByColor(colors[1]) + 0.05) >
-            contrast
+              contrast ||
+            (brightnessByColor(colors[1]) + 0.05) /
+              (brightnessByColor(colors[0]) + 0.05) >
+              contrast
           ) {
             $(".generateCanavas").append(
               `
@@ -348,7 +404,10 @@ const tenTest = () => {
         if (
           (brightnessByColor(colors[0]) + 0.05) /
             (brightnessByColor(colors[3]) + 0.05) >
-          contrast
+            contrast ||
+          (brightnessByColor(colors[3]) + 0.05) /
+            (brightnessByColor(colors[0]) + 0.05) >
+            contrast
         ) {
           $(".generateCanavas").append(
             `
@@ -370,7 +429,10 @@ const tenTest = () => {
         if (
           (brightnessByColor(colors[0]) + 0.05) /
             (brightnessByColor(colors[2]) + 0.05) >
-          contrast
+            contrast ||
+          (brightnessByColor(colors[2]) + 0.05) /
+            (brightnessByColor(colors[0]) + 0.05) >
+            contrast
         ) {
           $(".generateCanavas").append(
             `
@@ -392,7 +454,10 @@ const tenTest = () => {
         if (
           (brightnessByColor(colors[0]) + 0.05) /
             (brightnessByColor(colors[1]) + 0.05) >
-          contrast
+            contrast ||
+          (brightnessByColor(colors[1]) + 0.05) /
+            (brightnessByColor(colors[0]) + 0.05) >
+            contrast
         ) {
           $(".generateCanavas").append(
             `
@@ -415,3 +480,16 @@ const tenTest = () => {
     },
   });
 };
+
+// const Navtoggle = () => {
+//   if ($("#sidenav").hasClass("open")) {
+//     document.getElementById("sidenav").style.transform = "translateX(-100%)";
+//     // document.getElementById("sidenav").style.width = "0px";
+//     $(".sidenav").removeClass("open");
+//   } else {
+//     // document.getElementById("sidenav").style.width = "500px";
+//     document.getElementById("sidenav").style.transform = "translateX(0%)";
+//     document.getElementById("sidenav").style.display = "hidden";
+//     $("#sidenav").addClass("open");
+//   }
+// };

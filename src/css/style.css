@@ -48,3 +48,38 @@ input::-webkit-inner-spin-button {
 input[type="number"] {
   -moz-appearance: textfield;
 }
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  border-radius: 999px;
+  background: #f1f5f9;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #e2e8f0;
+  border-radius: 999px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #cbd5e1;
+}
+
+.sidebar {
+  height:max-content;
+  width: 0%;
+  display: none;
+  z-index: 1;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+.open {
+  width: 75%;
+  display: block;
+}
