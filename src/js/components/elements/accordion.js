@@ -11,8 +11,11 @@ const collapseControl = (el) => {
 };
 const accordion = () => {
   let color = "";
+  let cup_item = "";
   array = [...primary];
+  cup_copy = [...cupcake];
   array = array.sort(() => Math.random() - 0.5);
+  cup_copy = cup_copy.sort(() => Math.random() - 0.5);
   $(".generateCanavas").html("");
   $(".titleCanavas").html(`
   <h1 class="pb-2 mb-2 text-xl font-bold border-b">Accordion</h1>
@@ -20,6 +23,7 @@ const accordion = () => {
   `);
   for (let index = 0; index < 22; index++) {
     color = array.pop();
+    // cup_item = cup_copy.pop();
     $(".generateCanavas").append(` <div
     class="w-full accordion">
     <div class="grid grid-cols-1 gap-4 text-justify text-${color}-900">
@@ -41,10 +45,7 @@ const accordion = () => {
                     <img onclick="collapseControl(this)" src="src/img/arrow.svg" class="w-6 p-0.5 rounded-full bg-${color}-100" alt="" />
                 </div>
                 <div id="collapse" class="collapse">
-                    <p class="text-${color}-900/90">Lorem ipsum dolor sit amet, consectetur
-                        adipiscing elit.
-                        Suspendisse lacus ex, sit amet blandit leo lobortis eget. Lorem ipsum dolor sit amet, consectetur
-                        adipiscing elit. lacus ex, sit amet blandit leo lobortis eget.
+                    <p class="text-${color}-900/90">${cup_copy[Math.floor(Math.random() * 22)]}
                     </p>
                 </div>
             </div>
@@ -54,10 +55,7 @@ const accordion = () => {
                     <img onclick="collapseControl(this)" src="src/img/arrow.svg" class="w-6 p-0.5 rounded-full bg-${color}-100" alt="" />
                 </div>
                 <div id="collapse" class="collapse">
-                    <p class="text-${color}-900/90">Lorem ipsum dolor sit amet, consectetur
-                        adipiscing elit.
-                        Suspendisse lacus ex, sit amet blandit leo lobortis eget. Lorem ipsum dolor sit amet, consectetur
-                        adipiscing elit. lacus ex, sit amet blandit leo lobortis eget.
+                    <p class="text-${color}-900/90">${cup_copy[Math.floor(Math.random() * 22)]}
                     </p>
                 </div>
             </div>
@@ -67,10 +65,7 @@ const accordion = () => {
                     <img onclick="collapseControl(this)" src="src/img/arrow.svg" class="w-6 p-0.5 rounded-full bg-${color}-100" alt="" />
                 </div>
                 <div id="collapse" class="collapse">
-                    <p class="text-${color}-900/90">Lorem ipsum dolor sit amet, consectetur
-                        adipiscing elit.
-                        Suspendisse lacus ex, sit amet blandit leo lobortis eget. Lorem ipsum dolor sit amet, consectetur
-                        adipiscing elit. lacus ex, sit amet blandit leo lobortis eget.
+                    <p class="text-${color}-900/90">${cup_copy[Math.floor(Math.random() * 22)]}
                     </p>
                 </div>
             </div>

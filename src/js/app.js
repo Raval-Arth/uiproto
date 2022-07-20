@@ -1,32 +1,8 @@
-const primary = [
-  "slate",
-  "gray",
-  "zinc",
-  "neutral",
-  "stone",
-  "red",
-  "orange",
-  "amber",
-  "yellow",
-  "lime",
-  "green",
-  "emerald",
-  "teal",
-  "cyan",
-  "sky",
-  "blue",
-  "indigo",
-  "violet",
-  "purple",
-  "fuchsia",
-  "pink",
-  "rose",
-];
 
 var contrast = 5;
 window.onload = function () {
   // generateCard();
-  accordion();
+  avatar();
 };
 
 // const sidebarComponent = () => {
@@ -77,10 +53,21 @@ const sidenavToggle = () => {
 
 function w3_close() {}
 const switchTab = (el) => {
-  if (el == "accordionComponent") {
-    $(document.getElementById("testCounter")).addClass("hidden");
-    accordion();
+  console.log(el);
+  switch (parseInt(el)) {
+    case 1:
+      console.log("----------------");
+      $(document.getElementById("testCounter")).addClass("hidden");
+      accordion();
+      break;
+    case 2:
+      avatar();
+      break;
+
+    default:
+      break;
   }
+
   // if (id == "profile") {
   //   $(document.getElementById("testCounter")).addClass("hidden");
   //   generateCard();

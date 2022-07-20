@@ -1,17 +1,21 @@
 const selectSidenavItem = (el) => {
-$(el.parentNode.querySelector(".active-sidenav-item")).removeClass(
-"text-slate-900 bg-slate-100 active-sidenav-item"
-);
-$(el).addClass("text-slate-900 bg-slate-100 active-sidenav-item");
-switchTab(el.id);
+  $(el.parentNode.querySelector(".active-sidenav-item")).removeClass(
+    "text-slate-900 bg-slate-100 active-sidenav-item"
+  );
+  $(el).addClass("text-slate-900 bg-slate-100 active-sidenav-item");
+  switchTab(el.id);
 
-if ($(window).width() < 768) { $("#sidebar").removeClass("open"); $("#sidebar").removeClass("fixed"); } return
-    $(el).text(); }; const sidebarComponent=()=> {
-    return `
+  if ($(window).width() < 768) {
+    $("#sidebar").removeClass("open");
+    $("#sidebar").removeClass("fixed");
+  }
+};
+const sidebarComponent = () => {
+  return `
     <nav id="sidebar"
-        class="sidebar noselect px-4 text-slate-500 my-2 md:my-4 py-2 h-screen md:h-[70vh] md:overflow-y-scroll bg-white rounded-r-lg shadow">
+        class="sidebar noselect px-4 text-slate-500 my-2 md:my-4 py-2 h-screen md:overflow-y-scroll bg-white rounded-r-lg shadow">
         <div>
-            <div class="text-lg flex flex-col gap-1">
+            <div class="text-lg">
                 <div>
                     <div
                         class="mb-2 pb-2 text-xl font-semibold text-slate-700 border-b flex items-center justify-between">
@@ -19,12 +23,12 @@ if ($(window).width() < 768) { $("#sidebar").removeClass("open"); $("#sidebar").
                         <img onclick="collapseControl(this)" src="src/img/arrow.svg"
                             class="w-6 p-0.5 rounded-full bg-slate-100" alt="" style="transform: rotate(180deg);" />
                     </div>
-                    <div id="collapse" class="">
-                        <p id='accordionComponent' onclick="selectSidenavItem(this)"
+                    <div id="collapse" class="flex flex-col gap-1">
+                        <p id='1' onclick="selectSidenavItem(this)"
                             class='sidenav-item px-2 py-1 text-slate-900 bg-slate-100 hover:bg-slate-100 hover:text-slate-900 rounded-lg active-sidenav-item'>
                             Accordion
                         </p>
-                        <p onclick="selectSidenavItem(this)"
+                        <p id='2' onclick="selectSidenavItem(this)"
                             class='sidenav-item px-2 py-1 hover:bg-slate-100 hover:text-slate-900 rounded-lg'>Avatars
                         </p>
                         <p onclick="selectSidenavItem(this)"
@@ -44,15 +48,14 @@ if ($(window).width() < 768) { $("#sidebar").removeClass("open"); $("#sidebar").
                 </div>
 
                 <div>
-
                     <div
-                        class="mb-2 pb-2 text-xl font-semibold text-slate-700 border-b flex items-center justify-between">
+                        class="mt-5 mb-2 pb-2 text-xl font-semibold text-slate-700 border-b flex items-center justify-between">
                         <h2>Navigation</h2>
                         <img onclick="collapseControl(this)" src="src/img/arrow.svg"
                             class="w-6 p-0.5 rounded-full bg-slate-100" alt="" style="transform: rotate(180deg);" />
                     </div>
 
-                    <div class="">
+                    <div class="flex flex-col gap-1">
                         <p onclick="selectSidenavItem(this)"
                             class='sidenav-item px-2 py-1 hover:bg-slate-100 hover:text-slate-900 rounded-lg'>Navbars
                         </p>
@@ -85,4 +88,4 @@ if ($(window).width() < 768) { $("#sidebar").removeClass("open"); $("#sidebar").
         </div>
     </nav>
     `;
-    };
+};

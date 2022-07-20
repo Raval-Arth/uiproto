@@ -83,9 +83,7 @@ input[type="number"] {
   width: 75%;
   display: block;
 }
-.h-custome {
-  height: 70vh;
-}
+
 .noselect {
   -webkit-touch-callout: none; /* iOS Safari */
   -webkit-user-select: none; /* Safari */
