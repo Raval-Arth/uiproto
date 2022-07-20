@@ -228,14 +228,25 @@ const generateTest = (count) => {
 
 const copyToClipBoard = (el) => {
   /* Get the text field */
-  console.log(el.parentNode.parentNode.parentNode.parentNode);
-  let copyText = el.parentNode.parentNode.parentNode.parentNode.innerHTML;
+  console.log(el);
+  let copyText =
+    el.parentNode.parentNode.parentNode.childNodes[1].childNodes[3].innerHTML;
+
+  let class_temp = $(".copy_text").attr("class");
+  if (class_temp !== undefined) {
+    console.log(class_temp);
+    $(".copy_text").attr("class", class_temp.replace("900/30", "900"));
+    $(".copy_text").removeClass("copy_text");
+  }
+
+  el.classList = el.className.replace("900", "900/30");
+  el.classList.add("copy_text");
 
   /* Copy the text inside the text field */
   navigator.clipboard.writeText(copyText);
 
   /* Alert the copied text */
-  alert("Copied the text: " + copyText);
+  // alert("Copied the text: " + copyText);
 };
 
 const generateCard = () => {
