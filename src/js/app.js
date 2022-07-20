@@ -28,32 +28,32 @@ window.onload = function () {
   generateCard();
 };
 
-const sidebarComponent = () => {
-  return `
-  <nav id="sidebar" class="sidebar px-4 text-slate-500 my-2 md:my-4 py-2 h-screen md:h-[70vh] md:overflow-y-scroll bg-white rounded-r-lg shadow">
-      <h2 class="mb-2 pb-2 text-xl font-semibold text-center text-slate-700 border-b">Component</h2>
-      <div class="text-lg flex flex-col gap-1">
-        <p class="sidenav-item px-2 py-1 hover:bg-slate-100 hover:text-slate-900 rounded-lg">Hero Sections</p>
-        <p class="sidenav-item px-2 py-1 hover:bg-slate-100 hover:text-slate-900 rounded-lg">Feature Sections</p>
-        <p class="sidenav-item px-2 py-1 hover:bg-slate-100 hover:text-slate-900 rounded-lg">CTA Sections</p>
-        <p class="sidenav-item px-2 py-1 hover:bg-slate-100 hover:text-slate-900 rounded-lg">Pricing Sections</p>
-        <p class="sidenav-item px-2 py-1 hover:bg-slate-100 hover:text-slate-900 rounded-lg">Header Sections</p>
-        <p class="sidenav-item px-2 py-1 hover:bg-slate-100 hover:text-slate-900 rounded-lg">FAQs</p>
-        <p class="sidenav-item px-2 py-1 hover:bg-slate-100 hover:text-slate-900 rounded-lg">Newsletter Sections</p>
-        <p class="sidenav-item px-2 py-1 hover:bg-slate-100 hover:text-slate-900 rounded-lg">Stats</p>
-        <p class="sidenav-item px-2 py-1 hover:bg-slate-100 hover:text-slate-900 rounded-lg">Testimonials</p>
-        <p class="sidenav-item px-2 py-1 hover:bg-slate-100 hover:text-slate-900 rounded-lg">Blog Sections</p>
-        <p class="sidenav-item px-2 py-1 hover:bg-slate-100 hover:text-slate-900 rounded-lg">Contact Sections</p>
-        <p class="sidenav-item px-2 py-1 hover:bg-slate-100 hover:text-slate-900 rounded-lg">Team Sections</p>
-        <p class="sidenav-item px-2 py-1 hover:bg-slate-100 hover:text-slate-900 rounded-lg">Content Sections</p>
-        <p class="sidenav-item px-2 py-1 hover:bg-slate-100 hover:text-slate-900 rounded-lg">Footers</p>
-        <p class="sidenav-item px-2 py-1 hover:bg-slate-100 hover:text-slate-900 rounded-lg">Logo Clouds</p>
-        <p class="sidenav-item px-2 py-1 hover:bg-slate-100 hover:text-slate-900 rounded-lg">Profile</p>
-      </div>
-      <h2>Pages</h2>
-    </nav>
-  `;
-};
+// const sidebarComponent = () => {
+//   return `
+//   <nav id="sidebar" class="sidebar px-4 text-slate-500 my-2 md:my-4 py-2 h-screen md:h-[70vh] md:overflow-y-scroll bg-white rounded-r-lg shadow">
+//       <h2 class="mb-2 pb-2 text-xl font-semibold text-center text-slate-700 border-b">Component</h2>
+//       <div class="text-lg flex flex-col gap-1">
+//         <p class="sidenav-item px-2 py-1 hover:bg-slate-100 hover:text-slate-900 rounded-lg">Hero Sections</p>
+//         <p class="sidenav-item px-2 py-1 hover:bg-slate-100 hover:text-slate-900 rounded-lg">Feature Sections</p>
+//         <p class="sidenav-item px-2 py-1 hover:bg-slate-100 hover:text-slate-900 rounded-lg">CTA Sections</p>
+//         <p class="sidenav-item px-2 py-1 hover:bg-slate-100 hover:text-slate-900 rounded-lg">Pricing Sections</p>
+//         <p class="sidenav-item px-2 py-1 hover:bg-slate-100 hover:text-slate-900 rounded-lg">Header Sections</p>
+//         <p class="sidenav-item px-2 py-1 hover:bg-slate-100 hover:text-slate-900 rounded-lg">FAQs</p>
+//         <p class="sidenav-item px-2 py-1 hover:bg-slate-100 hover:text-slate-900 rounded-lg">Newsletter Sections</p>
+//         <p class="sidenav-item px-2 py-1 hover:bg-slate-100 hover:text-slate-900 rounded-lg">Stats</p>
+//         <p class="sidenav-item px-2 py-1 hover:bg-slate-100 hover:text-slate-900 rounded-lg">Testimonials</p>
+//         <p class="sidenav-item px-2 py-1 hover:bg-slate-100 hover:text-slate-900 rounded-lg">Blog Sections</p>
+//         <p class="sidenav-item px-2 py-1 hover:bg-slate-100 hover:text-slate-900 rounded-lg">Contact Sections</p>
+//         <p class="sidenav-item px-2 py-1 hover:bg-slate-100 hover:text-slate-900 rounded-lg">Team Sections</p>
+//         <p class="sidenav-item px-2 py-1 hover:bg-slate-100 hover:text-slate-900 rounded-lg">Content Sections</p>
+//         <p class="sidenav-item px-2 py-1 hover:bg-slate-100 hover:text-slate-900 rounded-lg">Footers</p>
+//         <p class="sidenav-item px-2 py-1 hover:bg-slate-100 hover:text-slate-900 rounded-lg">Logo Clouds</p>
+//         <p class="sidenav-item px-2 py-1 hover:bg-slate-100 hover:text-slate-900 rounded-lg">Profile</p>
+//       </div>
+//       <h2>Pages</h2>
+//     </nav>
+//   `;
+// };
 if ($(window).width() < 768) {
   $("#menuIcon").removeClass("hidden");
   $(".mobileSidebarCanvas").html(sidebarComponent());
