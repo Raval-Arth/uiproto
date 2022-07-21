@@ -1,6 +1,3 @@
-const joke_length = 78;
-const prifile_lenght = 4999;
-const cup_length = 31;
 const ranking = [
   "Fleet",
   "Gunnery",
@@ -929,3 +926,7 @@ const quote = [
   "A UDP packet walks into a bar. The bartender doesn't acknowledge him.",
   "99 Bugs in the Code.  99 Bugs in the Code.  You take one down, patch it around, 127 Bugs in the code",
 ];
+
+const joke_length = quote.length;
+const prifile_lenght = primary.length;
+const cup_length = cupcake.length;
