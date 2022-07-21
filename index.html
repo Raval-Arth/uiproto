@@ -27,10 +27,11 @@
   <div class="nav">
     <nav class="text-xl bg-white py-5 px-10 md:px-15 lg:20 flex items-center justify-between shadow shadow-b-lg">
       <p>UIPROTO</p>
-      <input type="text" value="10" class="hidden" />
-      <button onclick="random_gen()" class="random_gen"></button>
-      <!-- <p onclick="tenTest()">Random</p> -->
-      <span id="menuIcon" onclick="sidenavToggle()" class=""><img src="src/img/menu.svg" alt=""></span>
+      <div class="flex items-center gap-4">
+        <input type="text" value="10" class="hidden" />
+        <button onclick="random_gen()" class="random_gen"></button>
+        <span id="menuIcon" onclick="sidenavToggle()" class=""><img src="src/img/menu.svg" alt=""></span>
+      </div>
     </nav>
     <img src="src/img/dice/1.svg" class='hidden' alt="">
     <img src="src/img/dice/2.svg" class='hidden' alt="">
