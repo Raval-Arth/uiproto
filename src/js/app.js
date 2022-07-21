@@ -25,6 +25,7 @@ const sidenavToggle = () => {
 
 const switchTab = (el) => {
   random_gen_item = el;
+  profile();
 
   switch (parseInt(el)) {
     case 1:
