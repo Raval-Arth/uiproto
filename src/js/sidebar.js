@@ -1,3 +1,4 @@
+var random_gen_item = 1;
 const selectSidenavItem = (el) => {
   $(el.parentNode.querySelector(".active-sidenav-item")).removeClass(
     "text-slate-900 bg-slate-100 active-sidenav-item"
@@ -26,10 +27,11 @@ const sidebarComponent = () => {
                     <div id="collapse" class="flex flex-col gap-1">
                         <p id='1' onclick="selectSidenavItem(this)"
                             class='sidenav-item px-2 py-1 text-slate-900 bg-slate-100 hover:bg-slate-100 hover:text-slate-900 rounded-lg active-sidenav-item'>
-                            Accordion
+                            Avatars
                         </p>
                         <p id='2' onclick="selectSidenavItem(this)"
-                            class='sidenav-item px-2 py-1 hover:bg-slate-100 hover:text-slate-900 rounded-lg'>Avatars
+                            class='sidenav-item px-2 py-1 hover:bg-slate-100 hover:text-slate-900 rounded-lg'>
+                            Accordion
                         </p>
                         <p id='3' onclick="selectSidenavItem(this)"
                             class='sidenav-item px-2 py-1 hover:bg-slate-100 hover:text-slate-900 rounded-lg'>Dropdowns
@@ -89,3 +91,19 @@ const sidebarComponent = () => {
     </nav>
     `;
 };
+
+const random_gen = () => {
+  let dice = [1, 2, 3, 4, 5, 6];
+
+  $(".random_gen").html(
+    `
+          <div class="">
+              <img src="src/img/dice/${
+                dice[Math.floor(Math.random() * 6)]
+              }.svg" class="w-10 h-10" alt="">
+          </div>
+          `
+  );
+  switchTab(random_gen_item);
+};
+random_gen();

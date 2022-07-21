@@ -28,6 +28,7 @@
     <nav class="text-xl bg-white py-5 px-10 md:px-15 lg:20 flex items-center justify-between shadow shadow-b-lg">
       <p>UIPROTO</p>
       <input type="text" value="10" class="hidden" />
+      <button onclick="random_gen()" class="random_gen"></button>
       <!-- <p onclick="tenTest()">Random</p> -->
       <span id="menuIcon" onclick="sidenavToggle()" class=""><img src="src/img/menu.svg" alt=""></span>
     </nav>
@@ -40,8 +41,6 @@
       <p id="itemCard1" onclick="switchTab(this)" class="pb-2">Item Card</p>
       <p id="test" onclick="switchTab(this)" class="pb-2">Test</p>
     </nav> -->
-
-
   </div>
 
   <!--  -->
@@ -59,6 +58,8 @@
       <div
         class="generateCanavas grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-5 justify-items-center">
       </div>
+      <div class="quoteCanavas">
+      </div>
     </div>
   </div>
   <!-- footer -->
@@ -71,6 +72,7 @@
 <script src="src/js/sidebar.js" defer></script>
 <script src="src/js/app.js" defer></script>
 <script src="src/js/components/elements/accordion.js" defer></script>
+<script src="src//js/components/footer/quote.js" defer></script>
 <script src="src/js/components/elements/avatar.js" defer></script>
 <script src="src/js/components/elements/dropdown.js" defer></script>
 <script src="src/js/components/elements/badge.js" defer></script>

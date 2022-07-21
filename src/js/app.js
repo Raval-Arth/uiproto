@@ -1,7 +1,7 @@
 var contrast = 5;
 window.onload = function () {
   avatar();
-};  
+};
 
 if ($(window).width() < 768) {
   $("#menuIcon").removeClass("hidden");
@@ -24,13 +24,13 @@ const sidenavToggle = () => {
 };
 
 const switchTab = (el) => {
-  console.log(el);
+  random_gen_item = el;
   switch (parseInt(el)) {
     case 1:
-      accordion();
+      avatar();
       break;
     case 2:
-      avatar();
+      accordion();
       break;
     case 3:
       dropdown();
