@@ -1,7 +1,7 @@
 const avatar = () => {
   let color = "";
   let cup_item = "";
-  let title_item = "";
+  let profile = 0;
   array = [...primary];
   cup_copy = [...cupcake];
   ranking_copy = [...ranking];
@@ -18,6 +18,8 @@ const avatar = () => {
     color = array.pop();
     cup_item = cup_copy.pop();
     ranking_item = ranking_copy.pop();
+
+    profile = Math.floor(Math.random() * prifile_lenght);
     $(".generateCanavas").append(` <div class="w-full accordion">
     <div class="grid grid-cols-1 gap-4 text-${color}-900">
         <div class="flex items-center justify-between px-5 py-3 bg-white rounded-lg shadow">
@@ -35,7 +37,7 @@ const avatar = () => {
             <div class="px-5 py-3 ">
                 <div class="flex items-center justify-between">
                     <div class="flex items-center gap-1">
-                        <img onclick="collapseControl(this)" src="src/img/avatar1.jpg"
+                        <img onclick="collapseControl(this)" src="src/img/profile/${profile}.svg"
                             class="w-10 h-10 p-0.5 rounded-full bg-${color}-100" alt="" />
                         <p class="py-1 text-lg md:text-xl font-semibold">John dov</p>
                     </div>

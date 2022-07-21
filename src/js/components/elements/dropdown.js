@@ -14,6 +14,7 @@ const dropdown = () => {
 <p>Dropdowns are contextual overlays that may be toggled to display lists of links and other information. Toggle them by
     clicking on them. </p>
 `);
+
   for (let index = 0; index < 22; index++) {
     color = array.pop();
     cup_item = cup_copy.pop();

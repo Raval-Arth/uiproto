@@ -1,7 +1,7 @@
 var contrast = 5;
 window.onload = function () {
-  button();
-};
+  avatar();
+};  
 
 if ($(window).width() < 768) {
   $("#menuIcon").removeClass("hidden");
