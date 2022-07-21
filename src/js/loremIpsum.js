@@ -1781,7 +1781,7 @@ const ranking = [
   ];
 
 const joke_length = quote.length;
-const prifile_lenght = 4999;
+const profile_lenght = 4999;
 const cup_length = cupcake.length;
 
 // for (let index = 0; index < quote.length; index++) {
