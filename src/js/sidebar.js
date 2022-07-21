@@ -105,5 +105,6 @@ const random_gen = () => {
           `
   );
   switchTab(random_gen_item);
+  profile();
 };
 random_gen();

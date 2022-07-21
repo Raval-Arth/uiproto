@@ -1,22 +1,25 @@
 const badge = () => {
-let color = "";
-let cup_item = "";
-let title_item = "";
-let array = [...primary];
-let cup_copy = [...cupcake];
-let ranking_copy = [...ranking];
-array = array.sort(() => Math.random() - 0.5);
-cup_copy = cup_copy.sort(() => Math.random() - 0.5);
-ranking_copy = ranking_copy.sort(() => Math.random() - 0.5);
-$(".generateCanavas").html("");
-$(".titleCanavas").html(`
+  let color = "";
+  let cup_item = "";
+  let title_item = "";
+  let array = [...primary];
+  let cup_copy = [...cupcake];
+  let ranking_copy = [...ranking];
+  array = array.sort(() => Math.random() - 0.5);
+  cup_copy = cup_copy.sort(() => Math.random() - 0.5);
+  ranking_copy = ranking_copy.sort(() => Math.random() - 0.5);
+  $(".generateCanavas").html("");
+  $(".titleCanavas").html(`
 <h1 class="pb-2 mb-2 text-xl font-bold border-b">Badge</h1>
 <p>Badges are numerical indicators of how many items are associated with a link:
 Badges can also be used inside other elements, such as buttons:
 
 </p>
 `);
-for (let index = 0; index < 22; index++) { color=array.pop(); cup_item=cup_copy.pop(); $(".generateCanavas").append(`
+  for (let index = 0; index < 22; index++) {
+    color = array.pop();
+    cup_item = cup_copy.pop();
+    $(".generateCanavas").append(`
     <div class="w-full accordion">
     <div class="grid grid-cols-1 gap-4 text-${color}-900">
         <div class="flex items-center justify-between px-5 py-3 bg-white rounded-lg shadow">
@@ -33,8 +36,8 @@ for (let index = 0; index < 22; index++) { color=array.pop(); cup_item=cup_copy.
         <div class="shadow-md h-min overflow-hidden bg-white rounded-lg shadow-${color}-200">
             <div class="px-5 py-3 grid grid-cols-2 gap-y-2">
                 <div class='px-4 py-1 border w-fit rounded-full '>${
-                    ranking_copy[Math.floor(Math.random() * 51)]
-                    }</div>
+                  ranking_copy[Math.floor(Math.random() * 51)]
+                }</div>
                 <div class='px-4 py-1 flex items-center border w-fit rounded-full gap-2'>
                     <div class='w-2 h-2 bg-${color}-900 rounded-full'></div>
                     ${ranking_copy[Math.floor(Math.random() * 51)]}
@@ -47,5 +50,5 @@ for (let index = 0; index < 22; index++) { color=array.pop(); cup_item=cup_copy.
         </div>
     </div>
     `);
-    }
-    };
+  }
+};
