@@ -1,13 +1,6 @@
 const dropdown = () => {
-  let color = "";
-  let cup_item = "";
-  let title_item = "";
-  let array = [...primary];
-  let cup_copy = [...cupcake];
-  let ranking_copy = [...ranking];
-  array = array.sort(() => Math.random() - 0.5);
-  cup_copy = cup_copy.sort(() => Math.random() - 0.5);
-  ranking_copy = ranking_copy.sort(() => Math.random() - 0.5);
+  random();
+  console.log(array);
   $(".generateCanavas").html("");
   $(".titleCanavas").html(`
 <h1 class="pb-2 mb-2 text-xl font-bold border-b">Dropdown</h1>
@@ -39,31 +32,49 @@ const dropdown = () => {
                     <select class='bg-${color}-50 px-2 py-1 outline-none ring ring-${color}-300 rounded-md' name=""
                         id="">
                         <option value="">${
-                          ranking_copy[Math.floor(Math.random() * 51)]
+                          ranking_copy[
+                            Math.floor(Math.random() * ranking_copy.length)
+                          ]
                         }</option>
                         <option value="">${
-                          ranking_copy[Math.floor(Math.random() * 51)]
+                          ranking_copy[
+                            Math.floor(Math.random() * ranking_copy.length)
+                          ]
                         }</option>
                         <option value="">${
-                          ranking_copy[Math.floor(Math.random() * 51)]
+                          ranking_copy[
+                            Math.floor(Math.random() * ranking_copy.length)
+                          ]
                         }</option>
                         <option value="">${
-                          ranking_copy[Math.floor(Math.random() * 51)]
+                          ranking_copy[
+                            Math.floor(Math.random() * ranking_copy.length)
+                          ]
                         }</option>
                         <option value="">${
-                          ranking_copy[Math.floor(Math.random() * 51)]
+                          ranking_copy[
+                            Math.floor(Math.random() * ranking_copy.length)
+                          ]
                         }</option>
                         <option value="">${
-                          ranking_copy[Math.floor(Math.random() * 51)]
+                          ranking_copy[
+                            Math.floor(Math.random() * ranking_copy.length)
+                          ]
                         }</option>
                         <option value="">${
-                          ranking_copy[Math.floor(Math.random() * 51)]
+                          ranking_copy[
+                            Math.floor(Math.random() * ranking_copy.length)
+                          ]
                         }</option>
                         <option value="">${
-                          ranking_copy[Math.floor(Math.random() * 51)]
+                          ranking_copy[
+                            Math.floor(Math.random() * ranking_copy.length)
+                          ]
                         }</option>
                         <option value="">${
-                          ranking_copy[Math.floor(Math.random() * 51)]
+                          ranking_copy[
+                            Math.floor(Math.random() * ranking_copy.length)
+                          ]
                         }</option>
                     </select>
                 </div>

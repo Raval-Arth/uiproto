@@ -10,11 +10,7 @@ const collapseControl = (el) => {
   }
 };
 const accordion = () => {
-  let color = "";
-  let array = [...primary];
-  let cup_copy = [...cupcake];
-  array = array.sort(() => Math.random() - 0.5);
-  cup_copy = cup_copy.sort(() => Math.random() - 0.5);
+  random();
   $(".generateCanavas").html("");
   $(".titleCanavas").html(`
   <h1 class="pb-2 mb-2 text-xl font-bold border-b">Accordion</h1>

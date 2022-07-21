@@ -1,4 +1,3 @@
-var random_gen_item = 1;
 const selectSidenavItem = (el) => {
   $(el.parentNode.querySelector(".active-sidenav-item")).removeClass(
     "text-slate-900 bg-slate-100 active-sidenav-item"
@@ -91,20 +90,3 @@ const sidebarComponent = () => {
     </nav>
     `;
 };
-
-const random_gen = () => {
-  let dice = [1, 2, 3, 4, 5, 6];
-
-  $(".random_gen").html(
-    `
-          <div class="">
-              <img src="src/img/dice/${
-                dice[Math.floor(Math.random() * 6)]
-              }.svg" class="w-10 h-10" alt="">
-          </div>
-          `
-  );
-  switchTab(random_gen_item);
-  profile();
-};
-random_gen();
