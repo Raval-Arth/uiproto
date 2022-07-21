@@ -3,9 +3,9 @@ const profile = () => {
   let joke = 0;
   let joke_html = "";
   let color = "";
-  color = primary[Math.floor(Math.random() * primary.length)];
+  color = Math.floor(Math.random() * primary.length);
   joke = Math.floor(Math.random() * joke_length);
-  profile = Math.floor(Math.random() * prifile_lenght);
+  profile = Math.floor(Math.random() * profile_lenght);
 
   quote[joke] = quote[joke].replace(/(\n)/g, "<br>");
   joke_html = `
@@ -25,4 +25,3 @@ const profile = () => {
 
   $(".quoteCanavas").html(`${joke_html}`);
 };
-profile();

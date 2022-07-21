@@ -27,16 +27,15 @@ Badges can also be used inside other elements, such as buttons:
         </div>
         <div class="shadow-md h-min overflow-hidden bg-white rounded-lg shadow-${color}-200">
             <div class="px-5 py-3 grid grid-cols-2 gap-y-2">
-                <div class='px-4 py-1 border w-fit rounded-full '>${
-                  ranking_copy[Math.floor(Math.random() * 51)]
-                }</div>
+                <div class='px-4 py-1 border w-fit rounded-full '>
+                ${names[Math.floor(Math.random() * 51)]}</div>
                 <div class='px-4 py-1 flex items-center border w-fit rounded-full gap-2'>
                     <div class='w-2 h-2 bg-${color}-900 rounded-full'></div>
                     ${ranking_copy[Math.floor(Math.random() * 51)]}
                 </div>
                 <div class='px-4 py-1 flex items-center justify-between border w-fit rounded-full gap-2'>
-                    ${ranking_copy[Math.floor(Math.random() * 51)]}
-                    <img src="src/img/cross.svg" class="w-4 h-4" alt="">
+                    ${names[Math.floor(Math.random() * 51)]}
+                    <img src="src/img/icons/cross.svg" class="w-4 h-4" alt="">
                 </div>
             </div>
         </div>

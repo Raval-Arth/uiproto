@@ -26,7 +26,6 @@ const sidenavToggle = () => {
 const switchTab = (el) => {
   random_gen_item = el;
   profile();
-
   switch (parseInt(el)) {
     case 1:
       avatar();
@@ -48,7 +47,7 @@ const switchTab = (el) => {
       break;
 
     default:
-      accordion();
+      avatar();
       break;
   }
 };
@@ -80,100 +79,6 @@ function brightnessByColor(color) {
   }
   if (typeof r != "undefined") return (r * 299 + g * 587 + b * 114) / 1000;
 }
-
-const generateTest = (count) => {
-  $(".generateCanavas").html("");
-  if (count.value <= 100) {
-    $.ajax({
-      type: "GET",
-      url: "https://cdn.jsdelivr.net/npm/color-hunt-scrape@1.0.0/popular.json",
-      success: function (result) {
-        for (let index = 0; index < count.value; ) {
-          let temp_array = [];
-          let colors = result[Math.floor(Math.random() * 1000)];
-          if (temp_array.indexOf(colors) == -1)
-            console.log(temp_array.push(colors));
-          console.log(colors);
-          if (
-            (brightnessByColor(colors[0]) + 0.05) /
-              (brightnessByColor(colors[3]) + 0.05) >
-              contrast ||
-            (brightnessByColor(colors[3]) + 0.05) /
-              (brightnessByColor(colors[0]) + 0.05) >
-              contrast
-          ) {
-            $(".generateCanavas").append(
-              `
-    <div
-        class="w-full mx-5 px-5 py-2 my-2 test text-[${colors[3]}] bg-[${colors[0]}] shadow rounded-lg flex flex-col gap-4">
-        <div class="pb-2 flex gap-4">
-            <div class="w-5 h-5 bg-[${colors[0]}] rounded-full border border-[${colors[3]}]"></div>
-            <div class="w-5 h-5 bg-[${colors[1]}] rounded-full"></div>
-            <div class="w-5 h-5 bg-[${colors[2]}] rounded-full"></div>
-            <div class="w-5 h-5 bg-[${colors[3]}] rounded-full"></div>
-        </div>
-        <p>Test task 1</p>
-        <p>Test task 2</p>
-    </div>
-    `
-            );
-            index++;
-          }
-          if (
-            (brightnessByColor(colors[0]) + 0.05) /
-              (brightnessByColor(colors[2]) + 0.05) >
-              contrast ||
-            (brightnessByColor(colors[2]) + 0.05) /
-              (brightnessByColor(colors[0]) + 0.05) >
-              contrast
-          ) {
-            $(".generateCanavas").append(
-              `
-    <div
-        class="w-full mx-5 px-5 py-2 my-2 test text-[${colors[2]}] bg-[${colors[0]}] shadow rounded-lg flex flex-col gap-4">
-        <div class="pb-2 flex gap-4">
-            <div class="w-5 h-5 bg-[${colors[0]}] rounded-full border border-[${colors[3]}]"></div>
-            <div class="w-5 h-5 bg-[${colors[1]}] rounded-full"></div>
-            <div class="w-5 h-5 bg-[${colors[2]}] rounded-full"></div>
-            <div class="w-5 h-5 bg-[${colors[3]}] rounded-full"></div>
-        </div>
-        <p>Test task 1</p>
-        <p>Test task 2</p>
-    </div>
-    `
-            );
-            index++;
-          }
-          if (
-            (brightnessByColor(colors[0]) + 0.05) /
-              (brightnessByColor(colors[1]) + 0.05) >
-              contrast ||
-            (brightnessByColor(colors[1]) + 0.05) /
-              (brightnessByColor(colors[0]) + 0.05) >
-              contrast
-          ) {
-            $(".generateCanavas").append(
-              `
-    <div
-        class="w-full mx-5 px-5 py-2 my-2 test text-[${colors[1]}] bg-[${colors[0]}] shadow rounded-lg flex flex-col gap-4">
-        <div class="pb-2 flex gap-4">
-            <div class="w-5 h-5 bg-[${colors[0]}] rounded-full border border-[${colors[3]}]"></div>
-            <div class="w-5 h-5 bg-[${colors[1]}] rounded-full"></div>
-            <div class="w-5 h-5 bg-[${colors[2]}] rounded-full"></div>
-            <div class="w-5 h-5 bg-[${colors[3]}] rounded-full"></div>
-        </div>
-        <p>Test task 1</p>
-        <p>Test task 2</p>
-    </div>
-    `
-            );
-            index++;
-          }
-        }
-      },
-    });
-  }
-};
 
 const copyToClipBoard = (el) => {
   /* Get the text field */
@@ -323,7 +228,7 @@ const generateItemCard1 = () => {
                         </div>
                         <div class="py-2"></div>
                         <div class="flex gap-2 border border-${`color`}-900 shadow-md shadow-${color}-200 rounded-lg">
-                            <img src="src/img/plant.jpg" alt="" class="w-24 md:w-20">
+                            <img src="src/img/icons/plant.jpg" alt="" class="w-24 md:w-20">
                             <div>
                                 <p class="mt-2 font-bold text-lg text-${color}-900">Plant pot</p>
                                 <p class="text-sm md:text-xs">USD $29.99</p>

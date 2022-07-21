@@ -20,7 +20,7 @@ const sidebarComponent = () => {
                     <div
                         class="mb-2 pb-2 text-xl font-semibold text-slate-700 border-b flex items-center justify-between">
                         <h2 class="">Elements</h2>
-                        <img onclick="collapseControl(this)" src="src/img/arrow.svg"
+                        <img onclick="collapseControl(this)" src="src/img/icons/arrow.svg"
                             class="w-6 p-0.5 rounded-full bg-slate-100" alt="" style="transform: rotate(180deg);" />
                     </div>
                     <div id="collapse" class="flex flex-col gap-1">
@@ -48,11 +48,11 @@ const sidebarComponent = () => {
                     </div>
                 </div>
 
-                <div>
+                <!-- <div>
                     <div
                         class="mt-5 mb-2 pb-2 text-xl font-semibold text-slate-700 border-b flex items-center justify-between">
                         <h2>Navigation</h2>
-                        <img onclick="collapseControl(this)" src="src/img/arrow.svg"
+                        <img onclick="collapseControl(this)" src="src/img/icons/arrow.svg"
                             class="w-6 p-0.5 rounded-full bg-slate-100" alt="" style="transform: rotate(180deg);" />
                     </div>
 
@@ -84,7 +84,7 @@ const sidebarComponent = () => {
                             Palettes
                         </p>
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
     </nav>

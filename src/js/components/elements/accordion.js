@@ -18,7 +18,6 @@ const accordion = () => {
   `);
   for (let index = 0; index < cup_length; index++) {
     color = array.pop();
-    // cup_item = cup_copy.pop();
     $(".generateCanavas").append(` <div
     class="w-full accordion">
     <div class="grid grid-cols-1 gap-4 text-justify text-${color}-900">
@@ -37,7 +36,7 @@ const accordion = () => {
             <div class="px-5 py-3 ">
                 <div class="flex items-center justify-between">
                     <p class="py-1 text-lg">Collapsible Grop 1 </p>
-                    <img onclick="collapseControl(this)" src="src/img/arrow.svg" class="w-6 p-0.5 rounded-full bg-${color}-100" alt="" />
+                    <img onclick="collapseControl(this)" src="src/img/icons/arrow.svg" class="w-6 p-0.5 rounded-full bg-${color}-100" alt="" />
                 </div>
                 <div id="collapse" class="collapse">
                     <p class="text-${color}-900/80">${
@@ -49,7 +48,7 @@ const accordion = () => {
             <div class="px-5 py-3 ">
                 <div class="flex items-center justify-between">
                     <p class="py-1 text-lg">Collapsible Grop 2 </p>
-                    <img onclick="collapseControl(this)" src="src/img/arrow.svg" class="w-6 p-0.5 rounded-full bg-${color}-100" alt="" />
+                    <img onclick="collapseControl(this)" src="src/img/icons/arrow.svg" class="w-6 p-0.5 rounded-full bg-${color}-100" alt="" />
                 </div>
                 <div id="collapse" class="collapse">
                     <p class="text-${color}-900/80">${
@@ -61,7 +60,7 @@ const accordion = () => {
             <div class="px-5 py-3 ">
                 <div class="flex items-center justify-between">
                     <p class="py-1 text-lg">Collapsible Grop 3 </p>
-                    <img onclick="collapseControl(this)" src="src/img/arrow.svg" class="w-6 p-0.5 rounded-full bg-${color}-100" alt="" />
+                    <img onclick="collapseControl(this)" src="src/img/icons/arrow.svg" class="w-6 p-0.5 rounded-full bg-${color}-100" alt="" />
                 </div>
                 <div id="collapse" class="collapse">
                     <p class="text-${color}-900/80">${

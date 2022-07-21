@@ -28,15 +28,17 @@ const random_gen = () => {
             `
   );
   switchTab(random_gen_item);
-  profile();
 };
 
-let profileico_temp = Math.floor(Math.random() * 4999);
-document
-  .querySelector(".profileico")
-  .setAttribute("href", "src/img/profile/" + profileico_temp + ".svg");
-document
-  .querySelector(".profileimg")
-  .setAttribute("src", "src/img/profile/" + profileico_temp + ".svg");
+const profile_icon_random_control = () => {
+  let profileico_temp = Math.floor(Math.random() * 4999);
+  document
+    .querySelector(".profileico")
+    .setAttribute("href", "src/img/profile/" + profileico_temp + ".svg");
+  document
+    .querySelector(".profileimg")
+    .setAttribute("src", "src/img/profile/" + profileico_temp + ".svg");
+};
 
+profile_icon_random_control();
 random_gen();

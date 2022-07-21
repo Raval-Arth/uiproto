@@ -18,8 +18,8 @@ const avatar = () => {
     color = array.pop();
     cup_item = cup_copy.pop();
     ranking_item = ranking_copy.pop();
+    profile = Math.floor(Math.random() * profile_lenght);
 
-    profile = Math.floor(Math.random() * prifile_lenght);
     $(".generateCanavas").append(` <div class="w-full accordion">
     <div class="grid grid-cols-1 gap-4 text-${color}-900">
         <div class="flex items-center justify-between px-5 py-3 bg-white rounded-lg shadow">
