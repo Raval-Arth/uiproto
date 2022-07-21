@@ -25,7 +25,7 @@ const sidenavToggle = () => {
 
 const switchTab = (el) => {
   random_gen_item = el;
-  
+
   switch (parseInt(el)) {
     case 1:
       avatar();
@@ -79,6 +79,7 @@ function brightnessByColor(color) {
   }
   if (typeof r != "undefined") return (r * 299 + g * 587 + b * 114) / 1000;
 }
+
 const generateTest = (count) => {
   $(".generateCanavas").html("");
   if (count.value <= 100) {
@@ -181,7 +182,6 @@ const copyToClipBoard = (el) => {
 
   let class_temp = $(".copy_text").attr("class");
   if (class_temp !== undefined) {
-    console.log(class_temp);
     $(".copy_text").attr("class", class_temp.replace("900/30", "900"));
     $(".copy_text").removeClass("copy_text");
   }
@@ -241,6 +241,7 @@ const generateCard = () => {
         `);
   }
 };
+
 const generateTimeLine = () => {
   let color = "";
   array = [...primary];
@@ -297,6 +298,7 @@ const generateTimeLine = () => {
             `);
   }
 };
+
 const generateItemCard1 = () => {
   let color = "";
   array = [...primary];

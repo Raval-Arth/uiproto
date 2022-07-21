@@ -38,8 +38,10 @@ const avatar = () => {
                 <div class="flex items-center justify-between">
                     <div class="flex items-center gap-1">
                         <img onclick="collapseControl(this)" src="src/img/profile/${profile}.svg"
-                            class="w-10 h-10 p-0.5 rounded-full bg-${color}-100" alt="" />
-                        <p class="py-1 text-lg md:text-xl font-semibold">John dov</p>
+                            class="w-7 h-7 p-0.5 rounded-full bg-${color}-100" alt="" />
+                        <p class="py-1 text-lg  font-semibold">${
+                          names[Math.floor(Math.random() * names.length)]
+                        }</p>
                     </div>
                     <p class="py-1 lowercase">@${ranking_item}</p>
 
