@@ -1782,7 +1782,7 @@ const ranking = [
 
 console.log(names.length);
 const joke_length = quote.length;
-const prifile_lenght = primary.length;
+const prifile_lenght = 4999;
 const cup_length = cupcake.length;
 
 // for (let index = 0; index < quote.length; index++) {
