@@ -31,11 +31,12 @@ const random_gen = () => {
   profile();
 };
 
+let profileico_temp = Math.floor(Math.random() * 4999);
 document
   .querySelector(".profileico")
-  .setAttribute(
-    "href",
-    "src/img/profile/" + Math.floor(Math.random() * 4999) + ".svg"
-  );
+  .setAttribute("href", "src/img/profile/" + profileico_temp + ".svg");
+document
+  .querySelector(".profileimg")
+  .setAttribute("src", "src/img/profile/" + profileico_temp + ".svg");
 
 random_gen();
