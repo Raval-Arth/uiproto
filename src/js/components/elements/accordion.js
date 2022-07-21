@@ -16,7 +16,7 @@ const accordion = () => {
   <h1 class="pb-2 mb-2 text-xl font-bold border-b">Accordion</h1>
   <p>The accordion component allows the user to show and hide sections of related content on a page</p>
   `);
-  for (let index = 0; index < 22; index++) {
+  for (let index = 0; index < cup_length; index++) {
     color = array.pop();
     // cup_item = cup_copy.pop();
     $(".generateCanavas").append(` <div
@@ -41,7 +41,7 @@ const accordion = () => {
                 </div>
                 <div id="collapse" class="collapse">
                     <p class="text-${color}-900/80">${
-      cup_copy[Math.floor(Math.random() * 22)]
+      cup_copy[Math.floor(Math.random() * cup_length)]
     }
                     </p>
                 </div>
@@ -53,7 +53,7 @@ const accordion = () => {
                 </div>
                 <div id="collapse" class="collapse">
                     <p class="text-${color}-900/80">${
-      cup_copy[Math.floor(Math.random() * 22)]
+      cup_copy[Math.floor(Math.random() * cup_length)]
     }
                     </p>
                 </div>
@@ -65,7 +65,7 @@ const accordion = () => {
                 </div>
                 <div id="collapse" class="collapse">
                     <p class="text-${color}-900/80">${
-      cup_copy[Math.floor(Math.random() * 22)]
+      cup_copy[Math.floor(Math.random() * cup_length)]
     }
                     </p>
                 </div>

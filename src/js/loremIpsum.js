@@ -1,3 +1,6 @@
+const joke_length = 78;
+const prifile_lenght = 4999;
+const cup_length = 31;
 const ranking = [
   "Fleet",
   "Gunnery",
@@ -78,6 +81,15 @@ const cupcake = [
   "Icing donut jelly cupcake apple pie bear claw caramels dragée. Macaroon chupa chups jelly-o sweet caramels sweet. Shortbread powder bear claw dragée carrot cake chocolate bar.",
   "Cheesecake croissant dragée oat cake apple pie powder. Tootsie roll lollipop powder soufflé brownie. Cake sesame snaps tiramisu tart sweet pie carrot cake.",
   "Chocolate cake sweet donut bear claw caramels wafer. Sweet sugar plum soufflé candy canes liquorice. Croissant sweet shortbread tart topping dessert sesame snaps chocolate.",
+  "Marzipan candy cake cake marshmallow pudding. Cheesecake icing marshmallow jelly beans pie chocolate bar. Pastry lollipop marshmallow pie gingerbread pie liquorice. Jujubes cupcake pudding chocolate bar marzipan cake gummi bears pastry.",
+  "Dessert tootsie roll toffee gummies marshmallow apple pie. Marshmallow chocolate cake candy dragée oat cake gingerbread. Croissant danish cookie tart sweet pastry fruitcake. Brownie croissant croissant jelly candy canes.",
+  "Gummi bears croissant biscuit dragée danish sweet roll. Cake jelly halvah cake gummies tiramisu cupcake cookie powder. Caramels sweet marzipan halvah brownie brownie cake toffee wafer.",
+  "Jelly candy topping donut macaroon gingerbread chocolate. Chocolate bar cheesecake cake pudding dragée candy canes chocolate halvah muffin. Shortbread pastry toffee sweet roll cake caramels brownie. Topping halvah powder cookie cake jelly macaroon.",
+  "Chocolate powder croissant gummies jelly jelly beans oat cake. Toffee shortbread wafer chupa chups icing liquorice. Pie danish chocolate bar bear claw chocolate pastry apple pie bonbon.",
+  "Cheesecake sesame snaps wafer biscuit donut. Cookie apple pie cupcake candy canes cupcake lollipop chocolate. Dragée lollipop carrot cake pastry donut topping. Macaroon bear claw apple pie cotton candy fruitcake.",
+  "Bear claw chupa chups danish powder toffee dragée caramels pastry marshmallow. Caramels croissant powder marshmallow gingerbread sweet gummies. Cake lollipop jelly-o shortbread chocolate cake.",
+  "Soufflé sugar plum sesame snaps chocolate cake topping. Tart muffin jelly chupa chups oat cake lollipop shortbread. Sugar plum donut wafer macaroon jujubes lemon drops oat cake tart.",
+  "Shortbread toffee fruitcake biscuit caramels tart ice cream tootsie roll. Muffin macaroon pie donut pudding toffee chocolate candy canes gummi bears. Cupcake fruitcake jelly dessert liquorice soufflé wafer.",
 ];
 
 const primary = [
@@ -308,8 +320,6 @@ const names = [
   "Moria Tedorenko",
 ];
 
-const joke_length = 78;
-const prifile_lenght = 4999;
 const quote = {
   jokes: [
     {
