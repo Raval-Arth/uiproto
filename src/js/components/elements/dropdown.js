@@ -1,6 +1,5 @@
 const dropdown = () => {
   random();
-  console.log(array);
   $(".generateCanavas").html("");
   $(".titleCanavas").html(`
 <h1 class="pb-2 mb-2 text-xl font-bold border-b">Dropdown</h1>
