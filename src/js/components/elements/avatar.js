@@ -14,7 +14,7 @@ const avatar = () => {
 <p>The avatar component is used to show circular user profile photos. You may use this component to dynamically scale
     and apply a border radius to responsive pictures, icons, and text. </p>
 `);
-  for (let index = 0; index < 22; index++) {
+  for (let index = 0; index < array.length; index++) {
     color = array.pop();
     cup_item = cup_copy.pop();
     ranking_item = ranking_copy.pop();

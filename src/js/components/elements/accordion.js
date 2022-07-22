@@ -16,7 +16,7 @@ const accordion = () => {
   <h1 class="pb-2 mb-2 text-xl font-bold border-b">Accordion</h1>
   <p>The accordion component allows the user to show and hide sections of related content on a page</p>
   `);
-  for (let index = 0; index < cup_length; index++) {
+  for (let index = 0; index < array.length; index++) {
     color = array.pop();
     $(".generateCanavas").append(` <div
     class="w-full accordion">

@@ -9,7 +9,7 @@ const button = () => {
 </div>
 `);
 
-  for (let index = 0; index < 22; index++) {
+  for (let index = 0; index < array.length; index++) {
     color = array.pop();
     $(".generateCanavas").append(`
   <div class="w-full accordion">

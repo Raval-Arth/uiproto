@@ -1,15 +1,18 @@
 const buttonGroup = () => {
-random();
+  random();
 
-$(".generateCanavas").html("");
-$(".titleCanavas").html(`
+  $(".generateCanavas").html("");
+  $(".titleCanavas").html(`
 <div class="text-justify flex flex-col gap-2">
   <h1 class="pb-2 mb-2 text-xl font-bold border-b">Button Groups</h1>
   <p>Combine sets of button groups into button toolbars for more complex components. Use utility classes as needed to space out groups, buttons, and more.</p>
 </div>
 `);
 
-for (let index = 0; index < 22; index++) { color=array.pop(); cup_item=cup_copy.pop(); $(".generateCanavas").append(`
+  for (let index = 0; index < array.length; index++) {
+    color = array.pop();
+    cup_item = cup_copy.pop();
+    $(".generateCanavas").append(`
   <div class="w-full accordion">
   <div class="grid grid-cols-1 gap-4 text-${color}-900">
     <div class="flex items-center justify-between px-5 py-3 bg-white rounded-lg shadow">
@@ -30,18 +33,22 @@ for (let index = 0; index < 22; index++) { color=array.pop(); cup_item=cup_copy.
             <img src="src/img/icons/bookmark-dark.svg" alt="">
             <button class=''>Bookmar</button>
           </div>
-          <p class="px-2 py-1 border border-${color}-200 w-fit rounded-r-md">${Math.floor(Math.random() * 100)}k</p>
+          <p class="px-2 py-1 border border-${color}-200 w-fit rounded-r-md">${Math.floor(
+      Math.random() * 100
+    )}k</p>
         </div>
         <div class="flex text-${color}-900">
           <div class="px-2 py-1 border border-${color}-400 bg-${color}-50 w-fit rounded-l-md flex gap-2 items-center">
             <img class="w-4" src="src/img/icons/bookmark-dark.svg" alt="">
             <button>Bookmar</button>
           </div>
-          <p class="px-2 py-1 border border-${color}-400 w-fit bg-${color}-50 rounded-r-md">${Math.floor(Math.random() * 100)}k</p>
+          <p class="px-2 py-1 border border-${color}-400 w-fit bg-${color}-50 rounded-r-md">${Math.floor(
+      Math.random() * 100
+    )}k</p>
         </div>
       </div>
     </div>
   </div>
   `);
   }
-  };
+};

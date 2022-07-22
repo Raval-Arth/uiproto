@@ -8,7 +8,7 @@ Badges can also be used inside other elements, such as buttons:
 
 </p>
 `);
-  for (let index = 0; index < 22; index++) {
+  for (let index = 0; index < array.length; index++) {
     color = array.pop();
     cup_item = cup_copy.pop();
     $(".generateCanavas").append(`
