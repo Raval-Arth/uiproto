@@ -7,6 +7,7 @@ var array = [...primary];
 var cup_copy = [...cupcake];
 var ranking_copy = [...ranking];
 const array_length = 22;
+
 const random = () => {
   array = [...primary];
   cup_copy = [...cupcake];
