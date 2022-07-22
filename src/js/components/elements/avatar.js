@@ -10,11 +10,15 @@ const avatar = () => {
   ranking_copy = ranking_copy.sort(() => Math.random() - 0.5);
   $(".generateCanavas").html("");
   $(".titleCanavas").html(`
-<h1 class="pb-2 mb-2 text-xl font-bold border-b">Avatar</h1>
+<h1 class="pb-2 mb-2 text-xl font-bold border-b">${
+    emojis[Math.floor(Math.random() * emojis.length)]
+  } Avatar</h1>
 <p>The avatar component is used to show circular user profile photos. You may use this component to dynamically scale
     and apply a border radius to responsive pictures, icons, and text. </p>
 `);
-  for (let index = 0; index < array.length; index++) {
+
+  for (let index = 0; index < array_length; index++) {
+    console.log(array_length);
     color = array.pop();
     cup_item = cup_copy.pop();
     ranking_item = ranking_copy.pop();

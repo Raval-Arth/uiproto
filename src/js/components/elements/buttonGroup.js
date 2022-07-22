@@ -4,12 +4,14 @@ const buttonGroup = () => {
   $(".generateCanavas").html("");
   $(".titleCanavas").html(`
 <div class="text-justify flex flex-col gap-2">
-  <h1 class="pb-2 mb-2 text-xl font-bold border-b">Button Groups</h1>
+  <h1 class="pb-2 mb-2 text-xl font-bold border-b">${
+    emojis[Math.floor(Math.random() * emojis.length)]
+  } Button Groups</h1>
   <p>Combine sets of button groups into button toolbars for more complex components. Use utility classes as needed to space out groups, buttons, and more.</p>
 </div>
 `);
 
-  for (let index = 0; index < array.length; index++) {
+  for (let index = 0; index < array_length; index++) {
     color = array.pop();
     cup_item = cup_copy.pop();
     $(".generateCanavas").append(`

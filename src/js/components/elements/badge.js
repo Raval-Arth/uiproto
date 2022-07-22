@@ -2,13 +2,15 @@ const badge = () => {
   random();
   $(".generateCanavas").html("");
   $(".titleCanavas").html(`
-<h1 class="pb-2 mb-2 text-xl font-bold border-b">Badge</h1>
+<h1 class="pb-2 mb-2 text-xl font-bold border-b">${
+    emojis[Math.floor(Math.random() * emojis.length)]
+  } Badge</h1>
 <p>Badges are numerical indicators of how many items are associated with a link:
 Badges can also be used inside other elements, such as buttons:
 
 </p>
 `);
-  for (let index = 0; index < array.length; index++) {
+  for (let index = 0; index < array_length; index++) {
     color = array.pop();
     cup_item = cup_copy.pop();
     $(".generateCanavas").append(`

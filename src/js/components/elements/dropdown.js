@@ -2,12 +2,14 @@ const dropdown = () => {
   random();
   $(".generateCanavas").html("");
   $(".titleCanavas").html(`
-<h1 class="pb-2 mb-2 text-xl font-bold border-b">Dropdown</h1>
+<h1 class="pb-2 mb-2 text-xl font-bold border-b">${
+    emojis[Math.floor(Math.random() * emojis.length)]
+  } Dropdown</h1>
 <p>Dropdowns are contextual overlays that may be toggled to display lists of links and other information. Toggle them by
   clicking on them. </p>
 `);
 
-  for (let index = 0; index < array.length; index++) {
+  for (let index = 0; index < array_length; index++) {
     color = array.pop();
     cup_item = cup_copy.pop();
     $(".generateCanavas").append(`

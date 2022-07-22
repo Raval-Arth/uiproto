@@ -4,12 +4,14 @@ const button = () => {
   $(".generateCanavas").html("");
   $(".titleCanavas").html(`
 <div class="text-justify flex flex-col gap-2">
-  <h1 class="pb-2 mb-2 text-xl font-bold border-b">Button</h1>
+  <h1 class="pb-2 mb-2 text-xl font-bold border-b">${
+    emojis[Math.floor(Math.random() * emojis.length)]
+  } Button</h1>
   <p>The button tag defines a clickable button.</p>
 </div>
 `);
 
-  for (let index = 0; index < array.length; index++) {
+  for (let index = 0; index < array_length; index++) {
     color = array.pop();
     $(".generateCanavas").append(`
   <div class="w-full accordion">

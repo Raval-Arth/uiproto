@@ -2,10 +2,11 @@ var color = "";
 var cup_item = "";
 var title_item = "";
 var random_gen_item = 1;
+var emojis = [...emoji];
 var array = [...primary];
 var cup_copy = [...cupcake];
 var ranking_copy = [...ranking];
-
+const array_length = 22;
 const random = () => {
   array = [...primary];
   cup_copy = [...cupcake];
@@ -13,6 +14,7 @@ const random = () => {
   array = array.sort(() => Math.random() - 0.5);
   cup_copy = cup_copy.sort(() => Math.random() - 0.5);
   ranking_copy = ranking_copy.sort(() => Math.random() - 0.5);
+  emojis = emoji.sort(() => Math.random() - 0.5);
 };
 
 const random_gen = () => {

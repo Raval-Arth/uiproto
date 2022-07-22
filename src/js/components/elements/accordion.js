@@ -13,10 +13,12 @@ const accordion = () => {
   random();
   $(".generateCanavas").html("");
   $(".titleCanavas").html(`
-  <h1 class="pb-2 mb-2 text-xl font-bold border-b">Accordion</h1>
+  <h1 class="pb-2 mb-2 text-xl font-bold border-b">${
+    emojis[Math.floor(Math.random() * emojis.length)]
+  } Accordion</h1>
   <p>The accordion component allows the user to show and hide sections of related content on a page</p>
   `);
-  for (let index = 0; index < array.length; index++) {
+  for (let index = 0; index < array_length; index++) {
     color = array.pop();
     $(".generateCanavas").append(` <div
     class="w-full accordion">
