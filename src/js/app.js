@@ -1,6 +1,6 @@
 var contrast = 5;
 window.onload = function () {
-  dropdown();
+  avatar();
 };
 
 if ($(window).width() < 768) {
