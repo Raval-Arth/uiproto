@@ -29,10 +29,10 @@ const button = () => {
     </div>
     <div class="shadow-md h-min overflow-hidden bg-white rounded-lg shadow-${color}-200">
       <div class="px-5 py-3 grid grid-cols-2 gap-y-2">
-        <button class='px-4 py-1 border w-fit rounded-md '>${
-          names[Math.floor(Math.random() * 51)]
-        }</button>
-        <button class='px-4 py-1 flex items-center text-${color}-900 bg-${color}-50 border w-fit rounded-md gap-2'>
+        <button class='px-4 py-1 text-${color}-900 hover:text-${color}-400 focus:text-${color}-400 border w-fit rounded-md '>${
+      names[Math.floor(Math.random() * 51)]
+    }</button>
+        <button class='px-4 py-1 text-${color}-500 hover:text-${color}-900 focus:text-${color}-900 flex items-center text-${color}-900 bg-${color}-50 border w-fit rounded-md gap-2'>
           ${names[Math.floor(Math.random() * 51)]}
           <img src="src/img/icons/message-dark.svg" class='w-5 h-5 rounded-md' />
         </button>

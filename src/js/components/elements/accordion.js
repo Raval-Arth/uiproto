@@ -34,8 +34,8 @@ const accordion = () => {
                 copy
             </div>
         </div>
-        <div class="shadow-md bg-white rounded-lg shadow-${color}-200">
-            <div class="px-5 py-3 ">
+        <div class="h-min overflow-hidden bg-white rounded-lg border">
+            <div class="px-5 py-3">
                 <div class="flex items-center justify-between">
                     <p class="py-1 text-lg">Collapsible Grop 1 </p>
                     <img onclick="collapseControl(this)" src="src/img/icons/arrow.svg" class="w-6 p-0.5 rounded-full bg-${color}-100" alt="" />

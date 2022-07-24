@@ -1,6 +1,6 @@
 var contrast = 5;
 window.onload = function () {
-  // avatar();
+  dropdown();
 };
 
 if ($(window).width() < 768) {
@@ -25,6 +25,14 @@ const sidenavToggle = () => {
 
 const switchTab = (el) => {
   random_gen_item = el;
+
+  $(".generateCanavas").hasClass(
+    "md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4"
+  )
+    ? 0
+    : $(".generateCanavas").addClass(
+        "md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4"
+      );
   profile();
   switch (parseInt(el)) {
     case 1:

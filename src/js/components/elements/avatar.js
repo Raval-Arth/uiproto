@@ -18,7 +18,6 @@ const avatar = () => {
 `);
 
   for (let index = 0; index < array_length; index++) {
-    console.log(array_length);
     color = array.pop();
     cup_item = cup_copy.pop();
     ranking_item = ranking_copy.pop();
@@ -26,7 +25,7 @@ const avatar = () => {
 
     $(".generateCanavas").append(` <div class="w-full accordion">
     <div class="grid grid-cols-1 gap-4 text-${color}-900">
-        <div class="flex items-center justify-between px-5 py-3 bg-white rounded-lg shadow">
+        <div class="flex items-center justify-between px-5 py-3 bg-white rounded-lg border">
             <div class="flex items-center gap-4">
                 <div class="w-5 h-5 bg-${color}-50 rounded-full"></div>
                 <div class="w-5 h-5 bg-${color}-100 rounded-full"></div>
@@ -37,7 +36,7 @@ const avatar = () => {
                 copy
             </div>
         </div>
-        <div class="shadow-md h-min overflow-hidden bg-white rounded-lg shadow-${color}-200">
+        <div class="h-min overflow-hidden bg-white rounded-lg border">
             <div class="px-5 py-3 ">
                 <div class="flex items-center justify-between">
                     <div class="flex items-center gap-1">

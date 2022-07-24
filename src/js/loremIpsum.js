@@ -2580,3 +2580,4 @@ const cup_length = cupcake.length;
 //   navigator.clipboard.writeText(JSON.stringify(quote));
 //   console.log(quote);
 // };
+console.log(Math.floor(Math.random()*emoji.length));

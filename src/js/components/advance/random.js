@@ -31,6 +31,11 @@ const random_gen = () => {
             `
   );
   switchTab(random_gen_item);
+  console.log(
+    $(".generateCanavas").hasClass(
+      "md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4"
+    )
+  );
 };
 
 const profile_icon_random_control = () => {

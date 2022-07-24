@@ -23,7 +23,7 @@ const sidebarComponent = () => {
                         <img onclick="collapseControl(this)" src="src/img/icons/arrow.svg"
                             class="w-6 p-0.5 rounded-full bg-slate-100" alt="" style="transform: rotate(180deg);" />
                     </div>
-                    <div id="collapse" class="flex flex-col gap-1">
+                    <div id="collapse" class="flex flex-col gap-2">
                         <p id='1' onclick="selectSidenavItem(this)"
                             class='sidenav-item px-2 py-1 text-slate-900 bg-slate-100 hover:bg-slate-100 hover:text-slate-900 rounded-lg active-sidenav-item'>
                             Avatars
